@@ -1,48 +1,17 @@
 @import url('https://fonts.googleapis.com/css?family=Noto+Serif:400,400i,700');
 
-html, body { height: 100% }
 body {
-		margin: 0;
 		font-family: 'Noto Serif', serif;
-		font-size: 16px;
-		line-height: 2em;
 		color: #444;
-		display: flex;
-		flex-direction: column;
 }
-main {
-		padding: 1em;
-		overflow: auto;
-}
-header {
-		padding: 1em;
-		border-bottom: 1px solid #DDD;
-		box-shadow: rgba(238,238,238,.9) 2px 4px 4px;
-		display: flex;
-		flex-shrink: 0;
-}
-header > * { margin: 0 }
-header > h1 { flex-grow: 1 }
-header > nav { flex-shrink: 1 }
-header > nav a {
-		border-bottom-style: none;
-		font-variant: small-caps;
-		padding: 0 .5em;
-}
-main > section {
-		max-width: 960px;
-		margin: 0 auto;
-}
+
 a {
 		color: #222;
 		transition: color 0.3s ease;
 		text-decoration: none;
 		border-bottom: 1px dashed #444;
 }
-a:hover {
-		color: #1E88E5;
-}
-
+a:hover { color: #1E88E5 }
 h2 { font-size: 1.3em; border-bottom: 1px solid #DDD; margin-top: 2em; }
 h2 a { border-bottom-style: none; }
 h2 a:active { color: Red }
@@ -51,4 +20,47 @@ h4 { font-size: 1em;   margin-bottom: 0; }
 blockquote {
 		border-left: 4px solid #DDD;
 		padding-left: 1em;
+}
+
+@media screen {
+		html, body { height: 100% }
+		body {
+				margin: 0;
+				font-size: 14px;
+				line-height: 2em;
+				display: flex;
+				flex-direction: column;
+		}
+		main {
+				padding: 1em;
+				overflow: auto;
+		}
+		
+		header {
+				padding: 1em;
+				border-bottom: 1px solid #DDD;
+				box-shadow: rgba(238,238,238,.9) 2px 4px 4px;
+				display: flex;
+				flex-shrink: 0;
+		}
+		header > * { margin: 0 }
+		header > h1 { flex-grow: 1 }
+		header > nav { flex-shrink: 1 }
+		header > nav a {
+				border-bottom-style: none;
+				font-variant: small-caps;
+				padding: 0 .5em;
+		}
+		main > section {
+				max-width: 960px;
+				margin: 0 auto;
+		}	
+}
+
+
+
+
+@media print {
+		body { font-size: 13px; }
+		header { display: none }
 }

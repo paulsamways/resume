@@ -13,7 +13,7 @@ NICTA / CSIRO Data61 - UC Project (Haskell, SPA - Mithril) (AWS)
 
 * Programming Languages - C#, JavaScript (TypeScript, ES5/6), Haskell, Go, Java, Delphi, Bash, Clojure, Python, C.
 * Web - HTML5 & [Web APIs](https://developer.mozilla.org/en-US/docs/Web/API), CSS3, XML, XSLT, ASP.NET MVC & WebForms, JQuery, Bootstrap, AngularJS, [Mithril.js](https://mithril.js.org/).
-* Databases - PostgreSQL including query analysing and performance tuning, Microsoft SQL Server, SQLite.
+* Databases - PostgreSQL, Microsoft SQL Server, SQLite.
 * Operating Systems - Linux & Microsoft Windows.
 * Cloud - Amazon Web Services, Google Cloud Platform, Docker, Kubernetes.
 * Development Tools - Emacs, Visual Studio, Team-Foundation Server, Git, Mercurial, Subversion, Jira, Github, Gitlab.
@@ -21,15 +21,24 @@ NICTA / CSIRO Data61 - UC Project (Haskell, SPA - Mithril) (AWS)
 ## <a name="experience">Experience</a>
 
 ### NICTA / CSIRO Data61
-**Senior Software Engineer** &mdash; March 2016 - Present
+**Senior Software Engineer** &mdash; March 2016 - March 2018, December 2018 - Present
 
 #### Projects
 
-
 ##### [Regulation as a Platform](https://www.data61.csiro.au/en/Our-Work/Future-Cities/Optimising-service-delivery/RaaP) &mdash; Team Leader
 
+Regulation as a Platform (RaaP) ran as a collaboration between the Dept. of Industry and CSIRO Data61 in the [NISA: Platforms for Open Data](https://www.data61.csiro.au/en/Collaborate-with-us/Government/Platforms-For-Open-Data) program.
 
-##### [ACTive Community](https://www.canberra.edu.au/research/institutes/health-research-institute/research-areas/active-community-project) &mdash; Team Leader
+The project required 
+
+##### [ACTive Community](https://www.canberra.edu.au/research/institutes/health-research-institute/research-areas/active-community-project)
+
+ACTive Community was a program run by the University of Canberra to investigate the activity levels of Canberrans through fitness tracking devices. The development of the system used to register participant devices and collect data over the study period was conducted by CSIRO Data61, in which I was the principal software engineer.
+
+The system required a web front-end, written as a single-page application using the Mithril.js library, which enabled participants to join the study and connect their Fitbit or Garmin fitness devices. Once a device was connected, we were able to retrieve the participant's activity history and then poll each day for new fitness data. The RESTful API and background polling mechanism was written in Haskell and deployed alongside a PostgreSQL database. 
+
+The project was considered a great success with over 1000 participants registered and contributing data, with no downtime or defects in the system.
+
 
 ### Australian Building Codes Board
 
