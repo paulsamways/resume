@@ -1,13 +1,7 @@
 ## <a name="summary">Summary</a>
 
-VSoft - small company working on CI tools - JS (JQuery), .NET, ASP.NET MVC, PostgreSQL, SQL Server, DotNetNuke, etc
-ABCB - Internal CRM system - .NET (ASP.NET MVC), SQL Server
-NICTA / CSIRO Data61 - UC Project (Haskell, SPA - Mithril) (AWS)
-                     - RaaP - Haskell + SPA, Team leader (Docker, Kubernetes, GCP)
-					 - GS1 - Haskell (Docker)
-		
-- Move to Haskell (motivation, etc)
-- Interest, Future - Haskell, .NET Core (C#/F#), PostgreSQL
+Software engineer with over a decade of experience designing and building web based systems.
+
 
 ## <a name="skills">Skill Highlights</a>
 
@@ -27,9 +21,10 @@ NICTA / CSIRO Data61 - UC Project (Haskell, SPA - Mithril) (AWS)
 
 ##### [Regulation as a Platform](https://www.data61.csiro.au/en/Our-Work/Future-Cities/Optimising-service-delivery/RaaP) &mdash; Team Leader
 
-Regulation as a Platform (RaaP) ran as a collaboration between the Dept. of Industry and CSIRO Data61 in the [NISA: Platforms for Open Data](https://www.data61.csiro.au/en/Collaborate-with-us/Government/Platforms-For-Open-Data) program.
+Regulation as a Platform (RaaP) ran as a collaboration between the Dept. of Industry and CSIRO Data61 in the [NISA: Platforms for Open Data](https://www.data61.csiro.au/en/Collaborate-with-us/Government/Platforms-For-Open-Data) program. Building upon the research conducted by the legal informatics team within Data61, we built a platform to encode parts of Australia's legislation as sets of digital logic rules, and proof of concept applications to demonstrate utility.
 
-The project required 
+The platform consisted of multiple back-end services, written in Haskell, Scala or Python, and deployed into a Kubernetes cluster running on the Google Cloud infrastructure. The platform's rule authoring application was written in JavaScript using Mithril.js and designed as a single-page application.
+
 
 ##### [ACTive Community](https://www.canberra.edu.au/research/institutes/health-research-institute/research-areas/active-community-project)
 
@@ -79,7 +74,7 @@ The project was considered a great success with over 1000 participants registere
 
 #### Projects:
 
-* [ContinuaCI](https://www.finalbuilder.com/continua-ci) was started as a greenfield project by myself and the CEO and continues to be a feature product of the company. The architecture resembles a traditional 3-tier application with the addition of distributed worker agents communicating with the 'logic' layer in a hub and spoke pattern. Some technically interesting parts of the code base that I was responsible for included:
+* [ContinuaCI](https://www.finalbuilder.com/continua-ci) was started as a new project by myself and the CEO and continues to be a feature product of the company. The architecture resembles a traditional 3-tier application with the addition of distributed worker agents communicating with the 'logic' layer in a hub and spoke pattern. Some technically interesting parts of the code base that I was responsible for included:
     * Designing the distributed agents to analyse the environments in which they are installed and registering themselves, and capabilities, with the main application server.
     * Developing the workflow engine and web interface that enables the user to configure the build process that is run on the agents.
     * Designing the extensibility layer of the application to allow users to write custom build actions. An aspect of this was the use of .NET attributes to automatically generate a web interface for configuring instances of the actions. 
